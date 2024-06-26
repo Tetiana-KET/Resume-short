@@ -98,6 +98,10 @@ h2 {
 	letter-spacing: normal;
 }
 
+.contact__link svg {
+	flex-shrink: 0;
+}
+
 .contacts__item-text,
 .header__developer-name a,
 .header__developer-link {
@@ -148,8 +152,7 @@ h2 {
 }
 
 .main-content {
-	width: 56%;
-	margin: 0 auto;
+	width: 60%;
 	padding: 35px 25px 30px;
 }
 
@@ -247,5 +250,191 @@ h2 {
 	.work-examples__title:hover {
 		text-shadow: rgba(142, 222, 236, 0.9) 0 0 3px;
 		text-decoration: underline;
+	}
+}
+
+@media (max-width: 1150px) {
+	.sidebar {
+		padding: 3vw 2vw;
+	}
+
+	.main-content {
+		font-size: 2.5vw;
+		line-height: 4vw;
+	}
+
+	.header__developer-name,
+	.experience__item-title {
+		font-size: 3vw;
+		line-height: 5vw;
+	}
+
+	.experience__item-title {
+		flex-direction: column;
+	}
+
+	.header__developer-position,
+	.education__info {
+		font-size: 2vw;
+		line-height: 4vw;
+	}
+
+	.about__image-wrap img {
+		object-position: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.contacts__item,
+	.skills__item {
+		margin-bottom: 1.7vw;
+		font-size: 2vw;
+		line-height: 2vw;
+		padding-left: 2.3vw;
+	}
+
+	.contacts__title,
+	.section__title {
+		font-size: 3vw;
+	}
+
+	.contact__link {
+		font-size: 2vw;
+		gap: 1.7vw;
+		letter-spacing: normal;
+	}
+
+	.skills__item::before {
+		font-size: 1.8vw;
+	}
+}
+
+@media (max-width: 900px) {
+	.sidebar svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.contacts__item-icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.contacts__item-icon svg {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media (max-width: 700px) {
+	.site-wrapper {
+		flex-direction: column;
+	}
+
+	.sidebar,
+	.main-content {
+		width: 100%;
+	}
+
+	.sidebar__skills-wrap {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+	}
+
+	.sidebar__contacts {
+		width: 48%;
+	}
+
+	.sidebar__skills-wrap .sidebar__skills {
+		width: 38%;
+	}
+
+	.languages .skills__items {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.languages .contacts__title {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.header__developer-name {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.header__developer-position {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.contacts__item,
+	.skills__item {
+		font-size: 3vw;
+		line-height: 3vw;
+	}
+
+	.contacts__title,
+	.section__title {
+		font-size: 5vw;
+	}
+
+	.contact__link {
+		font-size: 3vw;
+	}
+
+	.about__image-wrap img {
+		transform: scale(1.2);
+	}
+
+	.sidebar svg {
+		width: 25px;
+		height: 25px;
+	}
+
+	.contacts__item-icon {
+		width: 25px;
+		height: 25px;
+	}
+
+	.contacts__item-icon svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.main-content {
+		padding: 25px 15px;
+		font-size: 4vw;
+		line-height: 5vw;
+	}
+
+	.experience__item-title,
+	.education__info {
+		font-size: 4vw;
+		line-height: 5vw;
+	}
+}
+
+@media (max-width: 500px) {
+	.about__image-wrap {
+		min-width: 280px;
+		min-height: 280px;
+	}
+
+	.sidebar svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.contacts__item-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.contacts__item-icon svg {
+		width: 17px;
+		height: 17px;
 	}
 }
