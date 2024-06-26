@@ -7,7 +7,7 @@ body {
 
 .site-wrapper {
 	display: flex;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
 	background-color: #f5f7fa;
 }
@@ -80,7 +80,9 @@ h2 {
 .contacts__item,
 .contact__link,
 .contacts__item-text,
-.contacts__item-icon svg path {
+.contacts__item-icon svg path,
+.header__developer-position a,
+.header__developer-name a {
 	transition: all 0.6s;
 }
 
@@ -96,11 +98,15 @@ h2 {
 	letter-spacing: normal;
 }
 
-.contacts__item-text {
+.contacts__item-text,
+.header__developer-name a,
+.header__developer-link {
 	position: relative;
 }
 
-.contacts__item-text::after {
+.contacts__item-text::after,
+.header__developer-name a::after,
+.header__developer-link::after {
 	opacity: 0;
 	content: '';
 	position: absolute;
@@ -203,7 +209,9 @@ h2 {
 }
 
 @media (hover: hover) {
-	.contacts__item:hover .contacts__item-text::after {
+	.contacts__item:hover .contacts__item-text::after,
+	.header__developer-name:hover .header__developer-link::after,
+	.header__developer-position:hover .header__developer-link::after {
 		width: 100%;
 		opacity: 1;
 		right: 0%;
@@ -220,7 +228,9 @@ h2 {
 	}
 
 	.contacts__item:hover .contact__link,
-	.header__nav-item:hover .nav-item__link {
+	.header__nav-item:hover .nav-item__link,
+	.header__developer-position:hover a,
+	.header__developer-name:hover a {
 		color: #ffffff;
 	}
 
