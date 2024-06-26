@@ -180,16 +180,11 @@ h2 {
 
 /* WORK EXPERIENCE */
 
-.experience {
-}
-.section__title {
-}
-.experience__list {
-}
 .experience__item {
 	text-align: justify;
 	margin-bottom: 10px;
 }
+
 .experience__item-title {
 	display: flex;
 	justify-content: space-between;
@@ -198,15 +193,13 @@ h2 {
 	font-size: 26px;
 	margin-bottom: 5px;
 }
-.work-examples__list {
-}
+
 .work-examples__item {
 	margin-bottom: 5px;
 }
+
 .work-examples__title {
 	font-weight: 600;
-}
-.work-examples__info {
 }
 
 @media (hover: hover) {
