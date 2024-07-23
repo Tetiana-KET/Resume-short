@@ -14,7 +14,7 @@ body {
 
 .site-wrapper {
 	display: flex;
-	max-width: 1400px;
+	max-width: 1600px;
 	margin: 0 auto;
 	background-color: var(--main-bg);
 	border: 1px solid rgba(0, 0, 0, 0.4);
@@ -217,8 +217,20 @@ h2 {
 	margin-bottom: 5px;
 }
 
+.work-examples__title {
+	text-decoration: underline;
+}
+
+.work-examples__info {
+	padding-left: 20px;
+}
+
+.work-examples__info li {
+	position: relative;
+}
+
 .experience__item:before,
-.work-examples__item:before {
+.work-examples__info li:before {
 	content: '';
 	position: absolute;
 	width: 8px;
@@ -229,7 +241,7 @@ h2 {
 	background-color: var(--black-color);
 }
 
-.work-examples__item:before {
+.work-examples__info li:before {
 	width: 6px;
 	height: 6px;
 }
