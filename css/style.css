@@ -215,6 +215,12 @@ h2 {
 	margin-bottom: 10px;
 }
 
+.experience__employee {
+	font-style: italic;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
 .work-examples__list {
 	padding-left: 20px;
 }
@@ -226,6 +232,7 @@ h2 {
 
 .title-name {
 	text-decoration: underline;
+	font-weight: 700;
 }
 
 .work-examples__info {
@@ -236,7 +243,6 @@ h2 {
 	position: relative;
 }
 
-.experience__item:before,
 .work-examples__info li:before {
 	content: '';
 	position: absolute;
@@ -253,7 +259,6 @@ h2 {
 	height: 6px;
 }
 
-.work-examples__title,
 .education__info a {
 	font-weight: 700;
 	transition: all 0.5s;
@@ -294,7 +299,6 @@ h2 {
 	.contacts__item-icon:hover svg path {
 		fill: var(--accent-color);
 	}
-
 	.work-examples__title:hover,
 	.education__info a:hover {
 		color: var(--accent-color);
